@@ -15,7 +15,6 @@ export interface Coffee {
 }
 interface CoffeeCardProps {
   coffee: Coffee;
-
 }
 export function CoffeeCard({ coffee }: CoffeeCardProps) {
   const formattedPrice = formatMoney(coffee.price);
