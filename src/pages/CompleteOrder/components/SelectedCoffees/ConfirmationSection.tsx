@@ -29,9 +29,9 @@ export function ConfirmationSection(){
         <RegularText weight="700" color="subtitle">{formattedCartTotal}</RegularText>
       </div>
 
-      <NavLink to={"/orderConfirmed"}  >
-        <Button text="Confirmar Pedido" disabled={cartQuantity <= 0} />
-      </NavLink>
+      
+      <Button text="Confirmar Pedido" disabled={cartQuantity <= 0} type="submit" />
+      
     </ConfirmationSectionContainer>
   );
 }
